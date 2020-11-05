@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #333;
+}
+
+/* navbar */
+.navigation h2{
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 5px solid #fff;
+    margin: 10px 0;
+    height: 65px;
+}
+
+.navigation h2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* weather search */
+.search-for-weather{
+    display: flex; 
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: #fff;
+}
+
+#weather-label{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.input-holder{
+    position: relative;
+}
+
+#weather-search-input{
+    width: 200px;
+    border-radius: 5px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background: #ffffffbf;
+    padding: 0 10px;
+}
+
+.fa-search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-5px, 25%);
+}
+
+#search-btn{
+    margin-top: 25px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background: #ffffffbf;
+    cursor: pointer;
+}
+
+/* weather info */
+
+.weather-info-output{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container{
+    max-width: 900px;
+    width: 100%;
+    height: 500px;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.weather-container h2{
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.placeholder::-webkit-input-placeholder{
+    color: red;
+}
