@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <h2><a href="#">Weather App</a></h2>
+    </nav>
+   
+    <section class="search-for-weather">
+        <label id="weather-label" for="weather">Search For Weather</label>
+        <div class="input-holder">
+            <input id="weather-search-input" type="text"><i class="fas fa-search"></i>
+        </div>
+      
+        <button id="search-btn">Search</button>
+    </section>
+
+    <section class="weather-info-output">
+        <div class="weather-container">
+            <h2>weather info</h2>
+            <p>City: <span id="city-holder"></span> </p>
+            <p>Temp: <span id="temp-holder"></span></p>
+            <p>It's <span id="description-holder"></span> Outside</p>
+        </div>
+    </section>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
